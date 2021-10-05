@@ -1,0 +1,12 @@
+.Heading h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    /* color: white; */
+    letter-spacing: 0.3em;
+}
+
+@media only screen and (max-width: 700px) {
+    .Heading h1 {
+        font-size : 2em;
+    }
+  }
