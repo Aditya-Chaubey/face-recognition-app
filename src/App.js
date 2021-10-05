@@ -28,7 +28,10 @@ class App extends react.Component {
     }
   }
   onInputchange = (event) => {
-    console.log(event.target.value)
+    console.log(event.target.value);
+  }
+  onButtonSubmit = () => {
+    console.log("Click");
   }
   render() {
     return (
@@ -40,7 +43,7 @@ class App extends react.Component {
         <Logo />
         <Heading />
         <AccountLVL />
-        <ImageURL onInputchange={this.onInputchange} />
+        <ImageURL onInputchange={this.onInputchange} onButtonSubmit={this.onButtonSubmit} />
       </div>
     );
   }
